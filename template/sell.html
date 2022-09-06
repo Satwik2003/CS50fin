@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    sell
+{% endblock %}
+
+{% block main %}
+    <div class='container'>
+        <div class='section'>
+            <h2>Sell</h2>
+            <form action='/sell' method='POST'>
+                <input name='symbol' type='text' autocomplete='off' placeholder='Symbol'>
+                <input name='shares' type='number' autocomplete='off' placeholder='Quantity'>
+                <input value='Sell' type='submit'>
+            </form>
+        </div>
+    </div>
+{% endblock %}
